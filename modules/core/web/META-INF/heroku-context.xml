@@ -1,0 +1,15 @@
+
+<Context>
+    <Resource driverClassName="org.postgresql.Driver"
+              maxIdle="2"
+              maxTotal="20"
+              maxWaitMillis="5000"
+              name="jdbc/CubaDS"
+              password="3bc202b89ad4a8dc02385c1755bbb7fc105a30c197358897d4524c817ad250ea"
+              type="javax.sql.DataSource"
+              url="postgres://zrrjqortxcuauq:3bc202b89ad4a8dc02385c1755bbb7fc105a30c197358897d4524c817ad250ea@ec2-54-235-193-34.compute-1.amazonaws.com:5432/dapdrd9b5h7vfv"
+              username="zrrjqortxcuauq"/>
+
+    <Manager pathname=""/>
+</Context>
+

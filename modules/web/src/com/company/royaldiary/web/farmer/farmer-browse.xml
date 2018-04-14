@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="com.company.royaldiary.web.farmer.FarmerBrowse"
+        focusComponent="farmersTable"
+        lookupComponent="farmersTable"
+        messagesPack="com.company.royaldiary.web.farmer">
+    <dsContext>
+        <groupDatasource id="farmersDs"
+                         class="com.company.royaldiary.entity.Farmer"
+                         view="_local">
+            <query>
+                <![CDATA[select e from royaldiary$Farmer e 
+where e.createdBy =  :session$userLogin]]>
+            </query>
+        </groupDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="farmersTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="farmersTable"
+                datasource="farmersDs">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="farmersTable"
+                    width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+                <action id="excel"/>
+                <action id="refresh"/>
+            </actions>
+            <columns>
+                <column id="lastName"/>
+                <column id="username"/>
+                <column id="firtstName"/>
+            </columns>
+            <rows datasource="farmersDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="farmersTable.create"/>
+                <button id="editBtn"
+                        action="farmersTable.edit"/>
+                <button id="removeBtn"
+                        action="farmersTable.remove"/>
+                <button id="excelBtn"
+                        action="farmersTable.excel"/>
+                <button id="refreshBtn"
+                        action="farmersTable.refresh"/>
+            </buttonsPanel>
+        </groupTable>
+    </layout>
+</window>

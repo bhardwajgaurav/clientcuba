@@ -1,0 +1,53 @@
+Performance Statistics   2018-04-11 20:30:00 - 2018-04-11 20:32:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                        17.0          17          17         0.0           1
+loginWindow#inject                                      30.0          30          30         0.0           1
+loginWindow#load                                       309.0         309         309         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                1.0           1           1         0.0           1
+loginWindow#xml                                          9.0           9           9         0.0           1
+mainWindow#init                                         23.0          23          23         0.0           1
+mainWindow#inject                                       18.0          18          18         0.0           1
+mainWindow#load                                        195.0         195         195         0.0           1
+mainWindow#ready                                        38.0          38          38         0.0           1
+mainWindow#uiPermissions                                 0.0           0           0         0.0           1
+mainWindow#xml                                           3.0           3           3         0.0           1
+royaldiary$Farmer.browse#init                            0.0           0           0         0.0           1
+royaldiary$Farmer.browse#inject                          3.0           3           3         0.0           1
+royaldiary$Farmer.browse#load                          403.0         403         403         0.0           1
+royaldiary$Farmer.browse#ready                           0.0           0           0         0.0           1
+royaldiary$Farmer.browse#uiPermissions                   0.0           0           0         0.0           1
+royaldiary$Farmer.browse#xml                             5.0           5           5         0.0           1
+royaldiary$Farmer.browse@farmersDs                     378.0         378         378         0.0           1
+
+Performance Statistics   2018-04-11 21:02:00 - 2018-04-11 21:04:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                         8.0           8           8         0.0           1
+loginWindow#inject                                      26.0          26          26         0.0           1
+loginWindow#load                                       619.0         619         619         0.0           1
+loginWindow#ready                                        0.0           0           0         0.0           1
+loginWindow#uiPermissions                                1.0           1           1         0.0           1
+loginWindow#xml                                         79.0          79          79         0.0           1
+
+Performance Statistics   2018-04-11 21:56:00 - 2018-04-11 21:58:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+loginWindow#init                                         8.5           0          17         8.5           2
+loginWindow#inject                                       9.5           1          18         8.5           2
+loginWindow#load                                       139.0           7         271       132.0           2
+loginWindow#ready                                        0.0           0           0         0.0           2
+loginWindow#uiPermissions                                0.5           0           1         0.5           2
+loginWindow#xml                                          8.0           1          15         7.0           2
+mainWindow#init                                         13.0           0          26        13.0           2
+mainWindow#inject                                       11.5           0          23        11.5           2
+mainWindow#load                                        171.5          28         315       143.5           2
+mainWindow#ready                                        10.5           6          15         4.5           2
+mainWindow#uiPermissions                                 0.0           0           0         0.0           2
+mainWindow#xml                                           1.5           0           3         1.5           2
+royaldiary$Farmer.browse#init                            0.0           0           0         0.0           2
+royaldiary$Farmer.browse#inject                          1.5           0           3         1.5           2
+royaldiary$Farmer.browse#load                          243.5          18         469       225.5           2
+royaldiary$Farmer.browse#ready                           0.0           0           0         0.0           2
+royaldiary$Farmer.browse#uiPermissions                   0.0           0           0         0.0           2
+royaldiary$Farmer.browse#xml                             2.5           0           5         2.5           2
+royaldiary$Farmer.browse@farmersDs                     209.0          23         395       186.0           2
+

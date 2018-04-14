@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
+    <include file="com/company/royaldiary/screens.xml"/>
+    <screen id="royaldiary$Farmer.browse"
+            template="com/company/royaldiary/web/farmer/farmer-browse.xml"/>
+    <screen id="royaldiary$Farmer.edit"
+            template="com/company/royaldiary/web/farmer/farmer-edit.xml"/>
+    <screen id="royaldiary$FarmerAddress.browse"
+            template="com/company/royaldiary/web/farmeraddress/farmer-address-browse.xml"/>
+    <screen id="royaldiary$FarmerAddress.edit"
+            template="com/company/royaldiary/web/farmeraddress/farmer-address-edit.xml"/>
+</screen-config>

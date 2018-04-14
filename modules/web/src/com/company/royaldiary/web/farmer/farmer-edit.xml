@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="com.company.royaldiary.web.farmer.FarmerEdit"
+        datasource="farmerDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.company.royaldiary.web.farmer">
+    <dsContext>
+        <datasource id="farmerDs"
+                    class="com.company.royaldiary.entity.Farmer"
+                    view="_local"/>
+        <collectionDatasource id="farmerAddressesDs"
+                              class="com.company.royaldiary.entity.FarmerAddress"
+                              view="_local">
+            <query>
+                <![CDATA[select e from royaldiary$FarmerAddress e
+ where e.farmer.id = :ds$farmerDs]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="windowActions"
+            spacing="true">
+        <fieldGroup id="fieldGroup"
+                    datasource="farmerDs">
+            <column width="250px">
+                <field property="lastName"/>
+                <field property="username"/>
+                <field property="firtstName"/>
+            </column>
+        </fieldGroup>
+        <label value="Address"/>
+        <table height="100px"
+               width="300px">
+            <columns>
+                <column id="state"/>
+                <column id="district"/>
+            </columns>
+            <rows datasource="farmerAddressesDs"/>
+        </table>
+        <frame id="windowActions"
+               screen="editWindowActions"/>
+    </layout>
+</window>

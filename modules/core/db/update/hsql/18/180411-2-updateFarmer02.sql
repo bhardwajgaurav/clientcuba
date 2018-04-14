@@ -1,0 +1,2 @@
+alter table ROYALDIARY_FARMER alter column ADDRESS_ID rename to ADDRESS_ID__U25004 ;
+drop index IDX_ROYALDIARY_FARMER_ADDRESS ;
