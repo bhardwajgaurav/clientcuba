@@ -10,6 +10,9 @@ create table ROYALDIARY_FARMER (
     DELETED_BY varchar(50),
     --
     LAST_NAME varchar(255),
+    TOTAL_COWS integer,
+    MILK_PRODUCTION double precision,
+    AVERAGE_QUALITY_OF_MILK double precision,
     USERNAME varchar(255),
     FIRTST_NAME varchar(255),
     --

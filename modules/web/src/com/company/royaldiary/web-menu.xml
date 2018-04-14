@@ -4,5 +4,6 @@
           insertBefore="administration">
         <item screen="royaldiary$Farmer.browse"/>
         <item screen="royaldiary$FarmerAddress.browse"/>
+        <item screen="company.royaldiary$Farmer.browse"/>
     </menu>
 </menu-config>

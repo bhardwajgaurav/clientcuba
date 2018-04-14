@@ -22,6 +22,15 @@ public class Farmer extends StandardEntity {
     @Column(name = "LAST_NAME")
     protected String lastName;
 
+    @Column(name = "TOTAL_COWS")
+    protected Integer totalCows;
+
+    @Column(name = "MILK_PRODUCTION")
+    protected Double milkProduction;
+
+    @Column(name = "AVERAGE_QUALITY_OF_MILK")
+    protected Double averageQualityOfMilk;
+
     @OneToMany(mappedBy = "farmer")
     protected List<FarmerAddress> address;
 
@@ -32,6 +41,31 @@ public class Farmer extends StandardEntity {
     @NotNull(message = "Please Provide First Name")
     @Column(name = "FIRTST_NAME")
     protected String firtstName;
+
+
+    public void setTotalCows(Integer totalCows) {
+        this.totalCows = totalCows;
+    }
+
+    public Integer getTotalCows() {
+        return totalCows;
+    }
+
+    public void setMilkProduction(Double milkProduction) {
+        this.milkProduction = milkProduction;
+    }
+
+    public Double getMilkProduction() {
+        return milkProduction;
+    }
+
+    public void setAverageQualityOfMilk(Double averageQualityOfMilk) {
+        this.averageQualityOfMilk = averageQualityOfMilk;
+    }
+
+    public Double getAverageQualityOfMilk() {
+        return averageQualityOfMilk;
+    }
 
 
     public void setAddress(List<FarmerAddress> address) {

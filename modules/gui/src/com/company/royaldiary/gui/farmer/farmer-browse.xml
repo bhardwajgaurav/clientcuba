@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://browseCaption"
-        class="com.company.royaldiary.web.farmer.FarmerBrowse"
+        class="com.company.royaldiary.gui.farmer.FarmerBrowse"
         focusComponent="farmersTable"
         lookupComponent="farmersTable"
-        messagesPack="com.company.royaldiary.web.farmer">
+        messagesPack="com.company.royaldiary.gui.farmer">
     <dsContext>
         <groupDatasource id="farmersDs"
                          class="com.company.royaldiary.entity.Farmer"
                          view="_local">
             <query>
-                <![CDATA[select e from royaldiary$Farmer e 
-where e.createdBy =  :session$userLogin]]>
+                <![CDATA[select e from royaldiary$Farmer e]]>
             </query>
         </groupDatasource>
     </dsContext>
@@ -30,13 +29,11 @@ where e.createdBy =  :session$userLogin]]>
                 <action id="create"/>
                 <action id="edit"/>
                 <action id="remove"/>
-                <action id="excel"/>
-                <action id="refresh"/>
             </actions>
             <columns>
+                <column id="lastName"/>
                 <column id="username"/>
                 <column id="firtstName"/>
-                <column id="lastName"/>
                 <column id="totalCows"/>
                 <column id="milkProduction"/>
                 <column id="averageQualityOfMilk"/>
@@ -51,10 +48,6 @@ where e.createdBy =  :session$userLogin]]>
                         action="farmersTable.edit"/>
                 <button id="removeBtn"
                         action="farmersTable.remove"/>
-                <button id="excelBtn"
-                        action="farmersTable.excel"/>
-                <button id="refreshBtn"
-                        action="farmersTable.refresh"/>
             </buttonsPanel>
         </groupTable>
     </layout>

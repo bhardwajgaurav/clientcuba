@@ -29,6 +29,11 @@
                 <field property="username"/>
                 <field property="firtstName"/>
             </column>
+            <column width="250px">
+                <field property="totalCows"/>
+                <field property="milkProduction"/>
+                <field property="averageQualityOfMilk"/>
+            </column>
         </fieldGroup>
         <label value="Address"/>
         <table height="100px"

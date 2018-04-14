@@ -9,4 +9,6 @@
             template="com/company/royaldiary/web/farmeraddress/farmer-address-browse.xml"/>
     <screen id="royaldiary$FarmerAddress.edit"
             template="com/company/royaldiary/web/farmeraddress/farmer-address-edit.xml"/>
+    <screen id="company.royaldiary$Farmer.browse"
+            template="com/company/royaldiary/web/company/farmer/farmer-browse.xml"/>
 </screen-config>
